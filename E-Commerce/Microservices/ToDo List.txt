@@ -1,0 +1,11 @@
+// Josh
+
+Account & Cart
+
+// Chris 
+
+Catalog & Inventory
+
+//Robert
+
+Email & Payment & Order
