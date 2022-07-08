@@ -1,11 +1,6 @@
-// Josh
+Make a dotnet project
+Make sql docker container 
 
-Account & Cart
+Connect project to sql
 
-// Chris 
-
-Catalog & Inventory
-
-//Robert
-
-Email & Payment & Order
+dockerize project
