@@ -1,0 +1,6 @@
+C:\Users\JoshuaJohnson\Documents\GitHub\E-Commerce\E-Commerce\Microservices\Account Service\obj\Debug\net6.0\Account Service.csproj.AssemblyReference.cache
+C:\Users\JoshuaJohnson\Documents\GitHub\E-Commerce\E-Commerce\Microservices\Account Service\obj\Debug\net6.0\Account Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JoshuaJohnson\Documents\GitHub\E-Commerce\E-Commerce\Microservices\Account Service\obj\Debug\net6.0\Account Service.AssemblyInfoInputs.cache
+C:\Users\JoshuaJohnson\Documents\GitHub\E-Commerce\E-Commerce\Microservices\Account Service\obj\Debug\net6.0\Account Service.AssemblyInfo.cs
+C:\Users\JoshuaJohnson\Documents\GitHub\E-Commerce\E-Commerce\Microservices\Account Service\obj\Debug\net6.0\Account Service.csproj.CoreCompileInputs.cache
+C:\Users\JoshuaJohnson\Documents\GitHub\E-Commerce\E-Commerce\Microservices\Account Service\obj\Debug\net6.0\Account Service.MvcApplicationPartsAssemblyInfo.cache
