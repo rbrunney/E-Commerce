@@ -15,7 +15,7 @@ public class InternalExceptionOverride extends ResponseEntityExceptionHandler {
      * @param npe A NullPointer Exception that was caused somewhere within the REST Service
      * @return A ResponseEntity Including an Exception Message, HttpHeaders, and a 400 Bad Request Response
      */
-    
+
     @ExceptionHandler(NullPointerException.class)
     public final ResponseEntity<ExceptionMessage> entityNotFound(NullPointerException npe) {
         ExceptionMessage em = new ExceptionMessage(npe.getMessage(), 400);
