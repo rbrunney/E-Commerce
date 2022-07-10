@@ -1,17 +1,16 @@
 package com.neumont.edu.sen300.emailservice.models;
 
-import javax.mail.Authenticator;
-import javax.mail.Message;
-import javax.mail.Session;
-import javax.mail.Transport;
+import javax.mail.*;
 import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
+import javax.mail.internet.MimeMultipart;
 import java.util.Properties;
 
 public class SendMail {
 
-    final static String senderEmail = "noreply.maineventofutah@gmail.com";
-    final static String senderPassword = "RetroGameAPI2021!";
+    final static String senderEmail = System.getenv("EMAIL");
+    final static String senderPassword = System.getenv("EMAIL_PASSWORD");
     final String emailSMTPServer = "smtp.gmail.com";
     final String emailServerPort = "465";
     String receiverEmail = null;
@@ -43,8 +42,6 @@ public class SendMail {
         props.put("mail.smtp.socketFactory.fallback", "false");
 
         try {
-            // Setting up the connection with Google and verifying email address
-            // Also sending the email with the message
             Authenticator auth = new SMTPAuthenticator();
             Session session = Session.getInstance(props, auth);
             MimeMessage msg = new MimeMessage(session);

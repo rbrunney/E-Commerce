@@ -8,11 +8,11 @@ import com.neumont.edu.sen300.emailservice.models.SendMail;
 @RequestMapping("/email")
 public class EmailController {
 
-    @GetMapping("/check")
-    public String checkEndPoint() {
-        return "Email is working";
-    }
-
+    /**
+     * Endpoint to send and email to a user
+     * @param email An Email Object containing the receiving users email, email subject, and email body
+     * @return A string of the email containing the receiving users email, email subject, and email body
+     */
     @PostMapping("/send")
     public String sendEmail(@RequestBody Email email) {
         new SendMail(email.getReceiverEmail(), email.getEmailSubject(), email.getEmailBody());
