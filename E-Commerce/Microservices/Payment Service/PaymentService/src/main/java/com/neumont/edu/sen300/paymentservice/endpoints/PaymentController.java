@@ -1,6 +1,9 @@
 package com.neumont.edu.sen300.paymentservice.endpoints;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.neumont.edu.sen300.paymentservice.models.CreditCard;
+import com.neumont.edu.sen300.paymentservice.util.URLRequestsUtil;
+import org.json.JSONObject;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,6 +16,7 @@ import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.time.LocalDate;
+import java.util.HashMap;
 
 @RestController
 @RequestMapping("/payment")
@@ -73,8 +77,7 @@ public class PaymentController {
      * @return ResponseEntity<String> stating the current state of the payment
      */
     @PostMapping("/startPayment/{email}")
-    public ResponseEntity<String> startPayment(@RequestBody CreditCard creditCard, @PathVariable String email) {
-
+    public ResponseEntity<String> startPayment(@RequestBody CreditCard creditCard, @PathVariable String email) throws IOException {
         //Creating email information
         String emailSubject = "Order Payment Process Started";
         String emailBody = "Your current order has begun its payment process!" +
@@ -84,39 +87,11 @@ public class PaymentController {
                 "Expiration Date " + creditCard.getExpirationDate();
 
         // Making a request to Email Service to Send Email
-        try {
-            URL url = new URL("http://localhost:8080/email/send");
-            HttpURLConnection con = (HttpURLConnection) url.openConnection();
-            con.setRequestMethod("POST");
-            con.setRequestProperty("Content-Type", "application/json");
-            con.setRequestProperty("Accept", "application/json");
-            con.setDoOutput(true);
-
-            // Turning Email information into JSON
-            String requestBodyInformation = "{'receiverEmail':" + email + "," +
-                                            "'emailSubject':" + emailSubject + "," +
-                                            "'emailBody':" + emailBody + "," +
-                                            "}";
-
-            //Sending Email Information
-            try(OutputStream os = con.getOutputStream()) {
-                byte[] input = requestBodyInformation.getBytes("utf-8");
-                os.write(input, 0, input.length);
-            }
-
-            // Reading response from post request
-            try(BufferedReader br = new BufferedReader(
-                    new InputStreamReader(con.getInputStream(), "utf-8"))) {
-                StringBuilder response = new StringBuilder();
-                String responseLine = null;
-                while ((responseLine = br.readLine()) != null) {
-                    response.append(responseLine.trim());
-                }
-                System.out.println(response);
-            }
-        } catch(IOException ioe) {
-            System.out.println("");
-        }
+        URLRequestsUtil.sendPostRequest("http://localhost:8080/email/send",
+                new JSONObject()
+                        .put("receiverEmail", email)
+                        .put("emailSubject", emailSubject)
+                        .put("emailBody", emailBody));
 
         return new ResponseEntity<>("Payment Started", new HttpHeaders(), HttpStatus.OK);
     }
