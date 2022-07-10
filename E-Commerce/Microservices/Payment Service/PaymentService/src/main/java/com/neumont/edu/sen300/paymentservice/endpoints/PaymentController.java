@@ -1,9 +1,14 @@
 package com.neumont.edu.sen300.paymentservice.endpoints;
 
 import com.neumont.edu.sen300.paymentservice.models.CreditCard;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -14,18 +19,9 @@ import java.time.LocalDate;
 public class PaymentController {
 
     /**
-     * End-point to check to see if /payment is running
-     * @return A string to validate this endpoint is working
-     */
-    @GetMapping("/check")
-    public String checkPayment() {
-        return "Payment is working";
-    }
-
-    /**
      * End-point to check if a credit card has not yet expired
      * @param creditCard CreditCard object used to check its date if it is valid
-     * @return ture if the card is expired
+     * @return true if the card is expired
      */
     @PostMapping("/isExpired")
     public boolean checkIsExpired(@RequestBody CreditCard creditCard) {
@@ -74,10 +70,10 @@ public class PaymentController {
      * End-point to start payment process
      * @param creditCard RequestBody of a CreditCard object used to start payment
      * @param email A Path Variable of the users email
-     * @return String stating the state of the payment
+     * @return ResponseEntity<String> stating the current state of the payment
      */
     @PostMapping("/startPayment/{email}")
-    public String startPayment(@RequestBody CreditCard creditCard, @PathVariable String email) {
+    public ResponseEntity<String> startPayment(@RequestBody CreditCard creditCard, @PathVariable String email) {
 
         //Creating email information
         String emailSubject = "Order Payment Process Started";
@@ -107,11 +103,22 @@ public class PaymentController {
                 byte[] input = requestBodyInformation.getBytes("utf-8");
                 os.write(input, 0, input.length);
             }
+
+            // Reading response from post request
+            try(BufferedReader br = new BufferedReader(
+                    new InputStreamReader(con.getInputStream(), "utf-8"))) {
+                StringBuilder response = new StringBuilder();
+                String responseLine = null;
+                while ((responseLine = br.readLine()) != null) {
+                    response.append(responseLine.trim());
+                }
+                System.out.println(response);
+            }
         } catch(IOException ioe) {
             System.out.println("");
         }
 
-        return "Payment Started";
+        return new ResponseEntity<>("Payment Started", new HttpHeaders(), HttpStatus.OK);
     }
 
 }
