@@ -1,8 +1,7 @@
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 
-namespace Services
-{
+
     public class ItemService
     {
         private readonly IMongoCollection<Item> _item;
@@ -37,4 +36,3 @@ namespace Services
         public async Task RemoveAsync(long id) =>
             await _item.DeleteOneAsync(i => i.Id == id);
     }
-}
