@@ -1,11 +1,9 @@
-using Services123;
-
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
 builder.Services.Configure<ItemDatabaseSettings>(builder.Configuration.GetSection("ItemDb"));
 
-builder.Services.AddSingleton<ItemService>();
+builder.Services.AddSingleton<Service123.ItemService>();
 
 app.MapGet("/", () => "Hello World!");
 

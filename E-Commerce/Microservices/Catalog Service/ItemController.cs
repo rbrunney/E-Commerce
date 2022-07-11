@@ -1,5 +1,4 @@
 using Microsoft.AspNetCore.Mvc;
-using Services123;
 
 namespace Controllers
 {
@@ -8,8 +7,8 @@ namespace Controllers
     
     public class MyController : ControllerBase
     {
-        private readonly ItemService _item;
-        public MyController(ItemService itemService)
+        private readonly Service123.ItemService _item;
+        public MyController(Service123.ItemService itemService)
         {
             _item = itemService;
         }
