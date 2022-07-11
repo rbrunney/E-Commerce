@@ -30,6 +30,15 @@ services:
     networks:
       - basenetwork
 
+  order_service:
+    build: ./docker/order_service
+    image: ecommerce-order_service:1.0
+    container_name: order-service
+    ports:
+      - "28900:8080"
+    networks:
+      - basenetwork
+
   nginx:
     build: ./docker/nginx
     image: nginx:1.0
@@ -42,16 +51,11 @@ services:
   order_database:
     image: "mongo:latest"
     container_name: order-database
-    environment:
-      - MONGO_INITDB_DATABASE=orders
-      - MONGO_INITDB_ROOT_USERNAME=ecommerceOrderDB
-      - MONGO_INITDB_ROOT_PASSWORD=ecommerceOrderDB1234!
     ports:
       - "28800:27017"
     networks:
       - basenetwork
-
-
+      
 networks:
   basenetwork:
     name: "ecommerce"
