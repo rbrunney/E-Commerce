@@ -26,7 +26,7 @@ services:
     image: ecommerce-payment_service:1.0
     container_name: payment_service
     ports:
-      - "27900:8080"
+      - "27900:8081"
     networks:
       - basenetwork
 
