@@ -39,6 +39,19 @@ services:
     networks:
       - basenetwork
 
+  order_database:
+    image: "mongo:latest"
+    container_name: order-database
+    environment:
+      - MONGO_INITDB_DATABASE=orders
+      - MONGO_INITDB_ROOT_USERNAME=ecommerceOrderDB
+      - MONGO_INITDB_ROOT_PASSWORD=ecommerceOrderDB1234!
+    ports:
+      - "28800:27017"
+    networks:
+      - basenetwork
+
+
 networks:
   basenetwork:
     name: "ecommerce"
