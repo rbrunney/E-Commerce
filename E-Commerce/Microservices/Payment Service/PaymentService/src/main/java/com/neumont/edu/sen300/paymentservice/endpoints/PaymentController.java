@@ -87,7 +87,7 @@ public class PaymentController {
                 "Expiration Date " + creditCard.getExpirationDate();
 
         // Making a request to Email Service to Send Email
-        URLRequestsUtil.sendPostRequest("http://localhost:27800/email/send",
+        URLRequestsUtil.sendPostRequest("http://ecommerce-site:80/email/send",
                 new JSONObject()
                         .put("receiverEmail", email)
                         .put("emailSubject", emailSubject)
