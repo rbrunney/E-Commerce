@@ -6,6 +6,7 @@ import com.neumont.edu.sen300.orderservice.repositories.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.IOException;
 import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.Map;
@@ -32,15 +33,23 @@ public class OrderController {
 
     /**
      * An End-Point to create a new order and you can send in JSONObject in any form to be saved to the database
-     * @param orderInfo JSONObject where the shape and form can come in any shape
+     * @param orderInfo Map<String, Object> where the shape and form can come in any shape
      * @param accountId A String which is a PathVariable containing the accountId
      * @return A Map<String, Object> which contains, a message, orderPlaceDate, and orderItems for the response
      */
     @PostMapping ("/newOrder/{accountId}")
-    public Map<String, Object> makeOrder(@RequestBody Map<String, Object> orderInfo, @PathVariable String accountId) {
+    public Map<String, Object> makeOrder(@RequestBody Map<String, Object> orderInfo, @PathVariable String accountId) throws IOException {
 
         // Inserting orderInfo into database and grabbing the ID it made for it
-        String orderId = orderRepo.save(new Order(accountId, orderInfo)).getId();
+        Map<String, Object> itemInformation =  (HashMap<String, Object>) orderInfo.get("items");
+
+        if (itemInformation == null) {// Creating response Information
+            Map<String, Object> response = new HashMap<>();
+            response.put("message", "Items is empty. Cannot make order");
+            return response;
+        }
+
+        String orderId = orderRepo.save(new Order(accountId, itemInformation)).getId();
 
         // Creating response Information
         Map<String, Object> response = new HashMap<>();
