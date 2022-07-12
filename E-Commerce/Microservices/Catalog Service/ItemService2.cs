@@ -2,14 +2,16 @@ using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 using Model;
 
-    public class ItemService
+namespace Ser
+{
+    public class ItemService2
     {
         private readonly IMongoCollection<Item> _item;
 
-        public ItemService(IOptions<ItemDatabaseSettings> itemDatabaseSettings)
+        public ItemService2(IOptions<ItemDatabaseSettings> itemDatabaseSettings)
         {
             var mongoClient = new MongoClient(
-                itemDatabaseSettings.Value.connectionString);
+                itemDatabaseSettings.Value.ConnectionString);
 
             var mongoDatabase = mongoClient.GetDatabase(
                 itemDatabaseSettings.Value.ItemDb);
@@ -36,3 +38,4 @@ using Model;
         public async Task RemoveAsync(long id) =>
             await _item.DeleteOneAsync(i => i.Id == id);
     }
+}

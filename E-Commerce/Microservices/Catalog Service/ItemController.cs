@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Ser;
 
 namespace Controllers
 {
@@ -7,13 +8,14 @@ namespace Controllers
     
     public class MyController : ControllerBase
     {
-        private readonly Service123.ItemService _item;
-        public MyController(Service123.ItemService itemService)
+        private readonly ItemService2 _item;
+        public MyController(ItemService2 itemService)
         {
             _item = itemService;
         }
 
 //////////////////////// All Gets //////////////////////////////////////
+
         //Get all items
         [HttpGet]
         [Route("getallitems")]
@@ -47,6 +49,7 @@ namespace Controllers
         }
 
 ///////////////////////////////// All Posts /////////////////////////////
+
         //Make item
         [HttpPost]
         [Route("makeitem")]
@@ -73,6 +76,7 @@ namespace Controllers
         }
 
 /////////////////////////////// All Updates /////////////////////////////
+
         //Update by id
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateItem(long id, Item item)
@@ -92,6 +96,7 @@ namespace Controllers
         }
 
 ////////////////////////////// All Deletes //////////////////////////////
+
         //Delete by id
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteItem(long id)

@@ -1,10 +1,15 @@
+using Model;
+
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddControllers();
+
+builder.Services.Configure<ItemDatabaseSettings>(builder.Configuration.GetSection("ItemDatabase"));
+builder.Services.AddSingleton<Ser.ItemService2>();
+
 var app = builder.Build();
-
-builder.Services.Configure<ItemDatabaseSettings>(builder.Configuration.GetSection("ItemDb"));
-
-builder.Services.AddSingleton<Service123.ItemService>();
+app.MapControllers();
 
 app.MapGet("/", () => "Hello World!");
 
 app.Run();
+//mongodb://EC:abc123!!@@localhost:27017
