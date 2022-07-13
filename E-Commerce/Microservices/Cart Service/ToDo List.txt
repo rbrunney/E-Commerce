@@ -1,11 +1,6 @@
-// Josh
+Make a dotnet project
+Make redis docker container 
 
-Account & Cart
+Connect project to redis
 
-// Chris 
-
-Catalog & Inventory
-
-//Robert
-
-Email & Payment & Order
+dockerize project

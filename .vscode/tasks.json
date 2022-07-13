@@ -7,7 +7,8 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/E-Commerce/Microservices/Catalog Service/Catalog Service.csproj",
+
+                "${workspaceFolder}/E-Commerce/Microservices/Account Service/Account Service.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +20,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/E-Commerce/Microservices/Catalog Service/Catalog Service.csproj",
+                "${workspaceFolder}/E-Commerce/Microservices/Account Service/Account Service.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -33,7 +34,8 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/E-Commerce/Microservices/Catalog Service/Catalog Service.csproj"
+
+                "${workspaceFolder}/E-Commerce/Microservices/Account Service/Account Service.csproj"
             ],
             "problemMatcher": "$msCompile"
         }

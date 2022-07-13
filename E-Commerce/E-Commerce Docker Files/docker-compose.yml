@@ -1,0 +1,61 @@
+version: "3.9"
+services:
+
+  # Service Example / Notes
+  # ==================
+  # name_of_service:                                    # This can be any name you want
+  #   build: ./docker/<folder_name_here>                # This is where you would have dockerfile plus any required dlls, jars, files, etc
+  #   image: <desired_image_name_here>                  # This is where you can put the desired name of the image for when it gets built
+  #   container_name: <desired_container_name_here>     # This is where you can put the desired name of the container for when it gets built
+  #   ports:
+  #     - "<container_port>:<virtual_port>"             # This is where you can put the desired ports
+  #   networks:
+  #     - <network_name_here>                           # This is where you can attach this service to a desired network 
+  
+  email_service:
+    build: ./docker/email_service
+    image: ecommerce-emailservice:1.0
+    container_name: email-service
+    ports: 
+      - "27800:8080"
+    networks:
+      - basenetwork
+
+  payment_service:
+    build: ./docker/payment_service
+    image: ecommerce-payment_service:1.0
+    container_name: payment-service
+    ports:
+      - "27900:8081"
+    networks:
+      - basenetwork
+
+  order_service:
+    build: ./docker/order_service
+    image: ecommerce-order_service:1.0
+    container_name: order-service
+    ports:
+      - "28900:8080"
+    networks:
+      - basenetwork
+
+  nginx:
+    build: ./docker/nginx
+    image: nginx:1.0
+    container_name: ecommerce-site
+    ports:
+      - "80:80"
+    networks:
+      - basenetwork
+
+  order_database:
+    image: "mongo:latest"
+    container_name: order-database
+    ports:
+      - "28800:27017"
+    networks:
+      - basenetwork
+      
+networks:
+  basenetwork:
+    name: "ecommerce"
