@@ -115,12 +115,5 @@ namespace Controllers
                 return NotFound();
             }
         } 
-
-        [HttpGet]
-        [Route("test")]
-        public ActionResult<String> abc()
-        {
-            return "Hello";
-        }       
     }
 }
