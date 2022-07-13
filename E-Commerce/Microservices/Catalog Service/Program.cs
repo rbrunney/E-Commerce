@@ -9,7 +9,5 @@ builder.Services.AddSingleton<Ser.ItemService2>();
 var app = builder.Build();
 app.MapControllers();
 
-app.MapGet("/", () => "Hello World!");
-
 app.Run();
 //mongodb://EC:abc123!!@@localhost:27017

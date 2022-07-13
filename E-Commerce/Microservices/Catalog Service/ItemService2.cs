@@ -14,28 +14,28 @@ namespace Ser
                 itemDatabaseSettings.Value.ConnectionString);
 
             var mongoDatabase = mongoClient.GetDatabase(
-                itemDatabaseSettings.Value.ItemDb);
+                itemDatabaseSettings.Value.DatabaseName);
 
             _item = mongoDatabase.GetCollection<Item>(
-                itemDatabaseSettings.Value.Items);
+                itemDatabaseSettings.Value.CollectionName);
         }
 
         public async Task<List<Item>> GetAsync() => 
             await _item.Find(_ => true).ToListAsync();
 
-        public async Task<Item?> GetAsync(long id) => 
+        public async Task<Item?> GetIdAsync(string id) => 
             await _item.Find(i => i.Id == id).FirstOrDefaultAsync();
 
-        public async Task<Item?> GetAsync(string name) =>
+        public async Task<Item?> GetNameAsync(string name) =>
             await _item.Find(i => i.Name == name).FirstOrDefaultAsync();
 
         public async Task CreateAsync(Item item) => 
             await _item.InsertOneAsync(item);
 
-        public async Task UpdateAsync(long id, Item NewItem) => 
+        public async Task UpdateAsync(string id, Item NewItem) => 
             await _item.ReplaceOneAsync(i => i.Id == id, NewItem);
 
-        public async Task RemoveAsync(long id) =>
+        public async Task RemoveAsync(string id) =>
             await _item.DeleteOneAsync(i => i.Id == id);
     }
 }

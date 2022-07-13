@@ -24,9 +24,9 @@ namespace Controllers
 
         //Get by id
         [HttpGet("{id}")]
-        public async Task<ActionResult<Item>> GetById(long id)
+        public async Task<ActionResult<Item>> GetById(string id)
         {
-            var TempItem = await _item.GetAsync(id);
+            var TempItem = await _item.GetIdAsync(id);
 
             if(TempItem is null)
             {
@@ -36,14 +36,18 @@ namespace Controllers
         }
 
         //Get by name
-        [HttpGet("{name}")]
+        [HttpGet]
+        [Route("getbyname/{name}")]
         public async Task<ActionResult<Item>> GetByName(string name)
         {
-            var DatabaseItem = await _item.GetAsync(name);
+            List<Item> Items = await _item.GetAsync();
 
-            if(DatabaseItem is not null)
+            for(int i = 0; i < Items.Count(); i++)
             {
-                return DatabaseItem;
+                if(Items[i].Name == name)
+                {
+                    return Items[i];
+                }
             }
             return NotFound();
         }
@@ -53,11 +57,9 @@ namespace Controllers
         //Make item
         [HttpPost]
         [Route("makeitem")]
-        public async Task<IResult> MakeItem(Item item)
-        {
-            Item TempItem = await _item.GetAsync(item.Id);
-
-            if(TempItem?.Name is null)
+        public async Task<IActionResult> MakeItem(Item item)
+        {          
+            if(item.Name is not null && item.Description is not null)
             {
                 if(!item.Name.Equals(""))
                 {
@@ -65,23 +67,23 @@ namespace Controllers
                     {
                         if(item.UnitPrice != 0.0d)
                         {
-                            _item.CreateAsync(item);
-                            return Results.Created($"/{item.Id}", item);
+                            await _item.CreateAsync(item);
+                            return CreatedAtAction(nameof(GetAllItems), new {id = item.Id}, item);
                         }
                     }
-                }                
+                }               
             }
             
-            return Results.Conflict();
+            return Conflict();
         }
 
 /////////////////////////////// All Updates /////////////////////////////
 
         //Update by id
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateItem(long id, Item item)
+        public async Task<IActionResult> UpdateItem(string id, Item item)
         {
-            var DatabaseItem = await _item.GetAsync(id);
+            var DatabaseItem = await _item.GetIdAsync(id);
 
             if(DatabaseItem is not null)
             {
@@ -99,9 +101,9 @@ namespace Controllers
 
         //Delete by id
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteItem(long id)
+        public async Task<IActionResult> DeleteItem(string id)
         {
-            var DatabaseItem = await _item.GetAsync(id);
+            var DatabaseItem = await _item.GetIdAsync(id);
 
             if(DatabaseItem is not null)
             {
@@ -112,6 +114,13 @@ namespace Controllers
             {
                 return NotFound();
             }
-        }        
+        } 
+
+        [HttpGet]
+        [Route("test")]
+        public ActionResult<String> abc()
+        {
+            return "Hello";
+        }       
     }
 }
