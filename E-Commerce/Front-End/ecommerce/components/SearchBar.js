@@ -1,20 +1,30 @@
-import { StyleSheet, View, TextInput, TouchableHighlight} from 'react-native';
+import { useState } from 'react';
+import { StyleSheet, View, TextInput, TouchableOpacity} from 'react-native';
 import Icon from "react-native-vector-icons/Ionicons";
 
 export default function SearchBar() {
+
+    const [searchText, setText] = useState('');
+
+    const searchForItems = (searchText) => {
+        console.log(searchText);
+    };
+
     return (
         <View style={styles.container}>
             <View style={styles.outerDivs}></View>
             <View style={styles.searchEntry}>
-                <TextInput placeholder="Search for Item" />
+                <TextInput placeholder="Search for Item" onChangeText={newSearchText => setText(newSearchText)}/>
             </View>
-            <TouchableHighlight onPress={()=>{console.log('What the nut')}}>
+            <TouchableOpacity onPress={() => searchForItems(searchText)}>
                 <View style={styles.button}>
-                    <Icon name="search"
-                        color="#ccc"
-                        size={25}/>
+                    <Icon 
+                        name="search"
+                        color="#000"
+                        size={25}
+                    />
                 </View>
-            </TouchableHighlight>
+            </TouchableOpacity>
             <View style={styles.outerDivs}></View>
         </View>
     );
@@ -49,6 +59,8 @@ const styles = StyleSheet.create({
     button: {
         alignItems: "center",
         backgroundColor: "#DDDDDD",
-        padding: 10
+        borderRadius: 5,
+        padding: 10,
+        marginLeft: 10
     }
 });
