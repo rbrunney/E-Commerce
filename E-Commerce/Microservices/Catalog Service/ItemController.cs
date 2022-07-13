@@ -40,14 +40,11 @@ namespace Controllers
         [Route("getbyname/{name}")]
         public async Task<ActionResult<Item>> GetByName(string name)
         {
-            List<Item> Items = await _item.GetAsync();
+            var TempItem = await _item.GetNameAsync(name);
 
-            for(int i = 0; i < Items.Count(); i++)
+            if(TempItem is not null)
             {
-                if(Items[i].Name == name)
-                {
-                    return Items[i];
-                }
+                return TempItem;
             }
             return NotFound();
         }
@@ -58,7 +55,7 @@ namespace Controllers
         [HttpPost]
         [Route("makeitem")]
         public async Task<IActionResult> MakeItem(Item item)
-        {          
+        {           
             if(item.Name is not null && item.Description is not null)
             {
                 if(!item.Name.Equals(""))
@@ -80,40 +77,38 @@ namespace Controllers
 /////////////////////////////// All Updates /////////////////////////////
 
         //Update by id
-        [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateItem(string id, Item item)
+        [HttpPut]
+        [Route("{name}")]
+        public async Task<IActionResult> UpdateItem(string name, Item item)
         {
-            var DatabaseItem = await _item.GetIdAsync(id);
+            //var TempItem = await _item.GetIdAsync(id);
+            var TempItem = await _item.GetNameAsync(name);
 
-            if(DatabaseItem is not null)
+            if(TempItem!.Id is not null)
             {
-                item.Id = DatabaseItem.Id;
-                await _item.UpdateAsync(id, item);
+                item.Id = TempItem.Id;
+                await _item.UpdateAsync(item.Id, item);
                 return NoContent();
-            }
-            else
-            {
-                return NotFound();
-            }
+            }         
+            return NotFound();
         }
 
 ////////////////////////////// All Deletes //////////////////////////////
 
         //Delete by id
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteItem(string id)
+        [HttpDelete]
+        [Route("{name}")]
+        public async Task<IActionResult> DeleteItem(string name)
         {
-            var DatabaseItem = await _item.GetIdAsync(id);
+            //var DatabaseItem = await _item.GetIdAsync(id);
+            var TempItem = await _item.GetNameAsync(name);
 
-            if(DatabaseItem is not null)
+            if(TempItem is not null)
             {
-                await _item.RemoveAsync(id);
+                await _item.RemoveAsync(TempItem.Name);
                 return NoContent();
             }
-            else
-            {
-                return NotFound();
-            }
+            return NotFound();
         } 
     }
 }

@@ -35,7 +35,7 @@ namespace Ser
         public async Task UpdateAsync(string id, Item NewItem) => 
             await _item.ReplaceOneAsync(i => i.Id == id, NewItem);
 
-        public async Task RemoveAsync(string id) =>
-            await _item.DeleteOneAsync(i => i.Id == id);
+        public async Task RemoveAsync(string name) =>
+            await _item.DeleteOneAsync(i => i.Name == name);
     }
 }
