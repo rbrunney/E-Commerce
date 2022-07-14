@@ -18,7 +18,7 @@ namespace Controllers
         }
 
         [HttpGet]
-        [Route("test")]
+
         public async Task<String> TestEndPoint(){
             var db = redis.GetDatabase();
             var pong = await db.PingAsync();
