@@ -1,15 +1,16 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-
-//"docker_db1": "Server=localhost,1433;database=apidb;User ID= SA;password=abc123!!@;"
+using StackExchange.Redis;
 
 namespace Controllers
 {
+
     [ApiController]
     [Route("cart")]
     public class Controller : ControllerBase
     {
         private readonly CartDB _CDB;
+        ConnectionMultiplexer redis = ConnectionMultiplexer.Connect(new ConfigurationOptions{EndPoints = {"localhost:6379"}});
         
         public Controller(ILogger<Controller> logger, CartDB cdb)
         {            
@@ -18,9 +19,21 @@ namespace Controllers
 
         [HttpGet]
         [Route("test")]
-        public ActionResult<String> TestEndPoint(){
+        public async Task<String> TestEndPoint(){
+            var db = redis.GetDatabase();
+            var pong = await db.PingAsync();
+            Console.WriteLine(pong);
             return "Test Succesful";
         }
+
+        // [HttpPost]
+        // [Route("addItem")]
+        // public ActionResult<Item> AddItemToCart(){
+        //     //Get Item name and Amount
+        //     //Add them to redis as a KEY:VALUE
+        //     //Save Redis
+        //     //Return result
+        // }
 
     }
 }
