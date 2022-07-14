@@ -19,13 +19,13 @@ export default function Home() {
     let itemList = []
 
     // Need a way to find how to pass in properties into elements
-    itemsTest.forEach((item) => {
-      itemList.push(
-        <View style={styles.scrollRow}>
-          <ItemCard name={item["Name"]} descripiton={item["Description"]} price={item["Price"]} />
-        </View>
-      )
-    }) 
+    // itemsTest.forEach((item) => {
+    //   itemList.push(
+    //     <View style={styles.scrollRow}>
+    //       <ItemCard name={item["Name"]} descripiton={item["Description"]} price={item["Price"]} />
+    //     </View>
+    //   )
+    // }) 
 
     return (
         <SafeAreaView style={styles.container}>
@@ -37,7 +37,7 @@ export default function Home() {
           </View>
           <View style={styles.body}>
             <ScrollView>
-              {itemList}
+              {/* {itemList} */}
             </ScrollView>
           </View>
           <StatusBar style="auto" />

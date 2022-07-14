@@ -18,7 +18,17 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSAppTransportSecurity": {
+          "NSAllowsArbitraryLoads": true,
+          "NSExceptionDomains": {
+            "localhost": {
+              "NSTemporaryExceptionAllowsInsecureHTTPLoads": true
+            }
+          }
+        }
+      }
     },
     "android": {
       "adaptiveIcon": {

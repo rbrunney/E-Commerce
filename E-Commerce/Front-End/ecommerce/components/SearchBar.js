@@ -6,8 +6,14 @@ export default function SearchBar() {
 
     const [searchText, setText] = useState('');
 
-    const searchForItems = (searchText) => {
-        console.log(searchText);
+    const getItemsFromApiAsync = () => {
+        var url = `http://localhost:9000/ecommerce/getallitems`;
+
+        fetch(url)
+            .then(resp => resp.json())
+            .then(data =>{
+                console.log(data);
+            }).catch(e => console.log(e));
     };
 
     return (
@@ -16,7 +22,7 @@ export default function SearchBar() {
             <View style={styles.searchEntry}>
                 <TextInput placeholder="Search for Item" onChangeText={newSearchText => setText(newSearchText)}/>
             </View>
-            <TouchableOpacity onPress={() => searchForItems(searchText)}>
+            <TouchableOpacity onPress={() => getItemsFromApiAsync()}>
                 <View style={styles.button}>
                     <Icon 
                         name="search"
