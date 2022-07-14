@@ -2,47 +2,56 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, SafeAreaView, ScrollView} from 'react-native';
 import SearchBar from '../components/SearchBar';
 import ItemCard from '../components/ItemCard'
+import { useEffect, useState } from 'react';
 
 
 export default function Home() {
 
-    // This needs to be replaced with an actual API call from the catalog service
-    let itemsTest = [
-      {"Name": "IPhone", "Description": "Cool Tech", "Price": "3,000"}, 
-      {"Name": "Chicken", "Description": "Yummmmy", "Price": "3.75"},
-      {"Name": "MTNDEW", "Description": "Mustard Water", "Price": "0.50"},
-      {"Name": "Tractor", "Description": "Cowboy go yeee", "Price": "10,000"},
-      {"Name": "Rocket", "Description": "To the MOON!!!!!", "Price": "2,500,000"},
-      {"Name": "Wii", "Description": "Nice Console, Have Fun Like EEEEEE", "Price": "6,500,000"}
-    ]
+  const [itemData, setData] = useState([])
 
-    let itemList = []
+  const getItems = async () => {
+    try {
+     const response = await fetch('http://locahost:80/ecommerce/getallitems');
+     const json = await response.json();
+     setData(json);
+     console.log(json)
+   } catch (error) {
+     console.error(error);
+   }
+ }
 
-    // Need a way to find how to pass in properties into elements
-    itemsTest.forEach((item) => {
-      itemList.push(
-        <View style={styles.scrollRow}>
-          <ItemCard name={item["Name"]} descripiton={item["Description"]} price={item["Price"]} />
+  // This needs to be replaced with an actual API call from the catalog service
+  useEffect(() => {
+    getItems();
+  }, []);
+  
+  
+  let itemList = [];
+  // Need a way to find how to pass in properties into elements
+  itemData.forEach((item) => {
+    itemList.push(
+      <View style={styles.scrollRow}>
+        <ItemCard name={item["name"]} descripiton={item["description"]} price={item["unitPrice"]} />
+      </View>
+    )
+  }) 
+
+  return (
+      <SafeAreaView style={styles.container}>
+        <View style={styles.header}>
+            <Text style={styles.headertext}>E-Commerce App</Text>
         </View>
-      )
-    }) 
-
-    return (
-        <SafeAreaView style={styles.container}>
-          <View style={styles.header}>
-              <Text style={styles.headertext}>E-Commerce App</Text>
-          </View>
-          <View style={styles.search}>
-              <SearchBar />
-          </View>
-          <View style={styles.body}>
-            <ScrollView>
-              {itemList}
-            </ScrollView>
-          </View>
-          <StatusBar style="auto" />
-        </SafeAreaView>
-    );
+        <View style={styles.search}>
+            <SearchBar />
+        </View>
+        <View style={styles.body}>
+          <ScrollView>
+            {itemList}
+          </ScrollView>
+        </View>
+        <StatusBar style="auto" />
+      </SafeAreaView>
+  );
 }
 
 const styles = StyleSheet.create({

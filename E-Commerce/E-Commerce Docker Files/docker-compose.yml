@@ -39,6 +39,15 @@ services:
     networks:
       - basenetwork
 
+  catalog_service:
+    build: ./docker/catalog_service
+    image: ecommerce-catalog_service:1.0
+    container_name: catalog_service
+    ports:
+      - "29000:5130"
+    networks:
+      - basenetwork
+
   nginx:
     build: ./docker/nginx
     image: nginx:1.0
@@ -53,6 +62,16 @@ services:
     container_name: order-database
     ports:
       - "28800:27017"
+    networks:
+      - basenetwork
+
+  item_database:
+    image: "mongo:latest"
+    container_name: itemdb
+    environment:
+      - MONGO_INITDB_DATABASE=ItemDb
+    ports: 
+      - "27106:27017"
     networks:
       - basenetwork
       
