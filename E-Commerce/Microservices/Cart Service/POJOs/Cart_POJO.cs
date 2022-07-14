@@ -1,5 +1,5 @@
 public class Cart
 {
-    public Dictionary<Item, int> allItemsInCart {get; set;}
+    public List<Item> allItemsInCart {get; set;} = new List<Item>();
 
 }
