@@ -20,6 +20,7 @@ import java.util.HashMap;
 
 @RestController
 @RequestMapping("/payment")
+@CrossOrigin(origins = "*")
 public class PaymentController {
 
     /**

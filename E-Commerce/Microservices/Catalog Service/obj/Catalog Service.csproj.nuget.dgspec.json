@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rbrunney\\OneDrive - Neumont College of Computer Science\\Desktop\\E-Commerce\\E-Commerce\\Microservices\\Catalog Service\\Catalog Service.csproj": {}
+    "C:\\Users\\cstanley\\git\\E-Commerce\\E-Commerce\\Microservices\\Catalog Service\\Catalog Service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rbrunney\\OneDrive - Neumont College of Computer Science\\Desktop\\E-Commerce\\E-Commerce\\Microservices\\Catalog Service\\Catalog Service.csproj": {
+    "C:\\Users\\cstanley\\git\\E-Commerce\\E-Commerce\\Microservices\\Catalog Service\\Catalog Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rbrunney\\OneDrive - Neumont College of Computer Science\\Desktop\\E-Commerce\\E-Commerce\\Microservices\\Catalog Service\\Catalog Service.csproj",
+        "projectUniqueName": "C:\\Users\\cstanley\\git\\E-Commerce\\E-Commerce\\Microservices\\Catalog Service\\Catalog Service.csproj",
         "projectName": "Catalog Service",
-        "projectPath": "C:\\Users\\rbrunney\\OneDrive - Neumont College of Computer Science\\Desktop\\E-Commerce\\E-Commerce\\Microservices\\Catalog Service\\Catalog Service.csproj",
-        "packagesPath": "C:\\Users\\rbrunney\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rbrunney\\OneDrive - Neumont College of Computer Science\\Desktop\\E-Commerce\\E-Commerce\\Microservices\\Catalog Service\\obj\\",
+        "projectPath": "C:\\Users\\cstanley\\git\\E-Commerce\\E-Commerce\\Microservices\\Catalog Service\\Catalog Service.csproj",
+        "packagesPath": "C:\\Users\\cstanley\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cstanley\\git\\E-Commerce\\E-Commerce\\Microservices\\Catalog Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\rbrunney\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\cstanley\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

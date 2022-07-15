@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Catalog</title>
+            <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+            <nav>
+                <a href="profile.html">Profile Page</a>
+                <a href="index.html">Home Page</a>
+            </nav>
+            <h1>Catalog Page</h1>
+            <h4>Catalog:</h4>
+            <table id="shoppingCart">
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>UnitPrice</th>
+                </tr>
+            </table>
+            <br>
+            <h4>Add Item to Catalog</h4>
+            <form>
+                <input id="Name" placeholder="Name of Product" required="required" type="text">
+                <br>
+                <input id="Description" placeholder="Description of Product" required="required" type="text">
+                <br>
+                <input id="UnitPrice" placeholder="UnitPrice" required="required" type="text">
+                <br>
+                <button id="AddItem" type="button" onclick="makeItem()">Add Item to Database</button>
+            </form>
+            <h3>Edit Item</h3>
+            <form>
+                <input id="editName" placeholder="Name of Product" required="required" type="text">
+                <br>
+                <input id="editDescription" placeholder="Description of Product" required="required" type="text">
+                <br>
+                <input id="editUnitPrice" placeholder="UnitPrice" required="required" type="text">
+                <br>
+                <button id="EditItem" type="button" onclick="editItem()">Edit Item in Database</button>
+            </form>
+            <h3>Delete Item</h3>
+            <form>
+                <input id="deleteName" placeholder="Name of Product" required="required" type="text">
+                <br>
+                <button id="EditItem" type="button" onclick="deleteItem()">Edit Item in Database</button>
+            </form>
+        </body>
+        <script src='catalog.js'></script>
+    </html>
