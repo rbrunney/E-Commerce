@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using StackExchange.Redis;
-using System;
+using System.Text;
 namespace Controllers
 {
 
@@ -10,6 +10,7 @@ namespace Controllers
     public class Controller : ControllerBase
     {
         private readonly IConnectionMultiplexer _redis;
+        //Make in memory database 
         private Cart cart = new Cart();
         public Controller(ILogger<Controller> logger, IConnectionMultiplexer redis)
         {
@@ -27,29 +28,36 @@ namespace Controllers
         }
 
         [HttpPost]
-        public string AddItemToCart(Item item){
-            var db = _redis.GetDatabase();
-            db.StringSet(item.Name, item.Quantity);
-            cart.allItemsInCart.Add(item);
+        public ActionResult<String> AddItemToCart(CartItem item){
+            cart.ItemsInCart.Add(item);
             return item.Name + " Added to Cart";
         }
 
         [HttpGet("{name}")]
-        public void GetItemInCart(string name){
-            var db = _redis.GetDatabase();
-            string? value = db.StringGet(name);
-            Console.WriteLine(value);
+        public ActionResult<String> GetItemInCart(string name){
+            string toReturn = "";
+            foreach(CartItem item in cart.ItemsInCart){
+                if(item.Name.Equals(name)){
+                    toReturn = item.ToString();
+                    System.Console.WriteLine(item.ToString());
+                }
+                else{
+                    toReturn = "Item Name Not Found";
+                }
+            }
+            System.Console.WriteLine("End Getting");
+            return toReturn;
         }
         
         [HttpGet]
         [Route("allitems")]
-        public void GetAllItemsInCart(){
-            var db = _redis.GetDatabase();
-            foreach(Item item in cart.allItemsInCart){
-                string? value = db.StringGet(item.Name);
-                System.Console.WriteLine(item.Name + ": " + Int32.Parse(value) * item.UnitPrice);
+        public ActionResult<String> GetAllItemsInCart(){
+            StringBuilder sb = new StringBuilder();
+            foreach(CartItem item in cart.ItemsInCart)
+            {
+                sb.Append(item.ToString());
+            }
+            return sb.ToString();
             }
         }
-
     }
-}

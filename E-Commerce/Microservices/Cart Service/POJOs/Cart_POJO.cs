@@ -1,5 +1,5 @@
 public class Cart
 {
-    public List<Item> allItemsInCart {get; set;} = new List<Item>();
+    public List<CartItem> ItemsInCart {get; set;} = new List<CartItem>();
 
 }
