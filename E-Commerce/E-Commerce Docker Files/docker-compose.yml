@@ -12,6 +12,15 @@ services:
   #   networks:
   #     - <network_name_here>                           # This is where you can attach this service to a desired network 
   
+  account_service:
+    build: ./docker/account_service
+    image: ecommerce-accountservice:1.0
+    container_name: account-service
+    ports:
+      - "27700:5009"
+    networks:
+      - basenetwork
+  
   email_service:
     build: ./docker/email_service
     image: ecommerce-emailservice:1.0
