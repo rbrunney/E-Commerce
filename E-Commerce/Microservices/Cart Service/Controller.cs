@@ -9,45 +9,42 @@ namespace Controllers
     [Route("cart")]
     public class Controller : ControllerBase
     {
-        private readonly IConnectionMultiplexer _redis;
+        private readonly CartDB _cdb;
         //Make in memory database 
         private Cart cart = new Cart();
-        // public Controller(ILogger<Controller> logger, IConnectionMultiplexer redis)
-        // {
-        //     _redis = redis;
-        // }
-
-        [HttpGet]
-        [Route("test")]
-        public void TestEndPoint()
+        public Controller(ILogger<Controller> logger, CartDB cdb)
         {
-            var db = _redis.GetDatabase();
-            db.StringSet("mykey", "myvalue123");
-            string? value = db.StringGet("mykey");
-            Console.WriteLine("This is the redis value: {0}", value);
+            _cdb = cdb;
         }
 
+        // [HttpGet]
+        // [Route("test")]
+        // public void TestEndPoint()
+        // {
+        //     var db = _redis.GetDatabase();
+        //     db.StringSet("mykey", "myvalue123");
+        //     string? value = db.StringGet("mykey");
+        //     Console.WriteLine("This is the redis value: {0}", value);
+        // }
+
         [HttpPost]
-        public ActionResult<String> AddItemToCart(CartItem item){
-            cart.ItemsInCart.Add(item);
-            return item.Name + " Added to Cart";
+        public async Task<IResult> AddItemToCart(CartItem item){
+            _cdb.Cart.Add(item);
+            await _cdb.SaveChangesAsync();
+            return Results.Created($"/{item.Name}", item);
         }
 
         [HttpGet("{name}")]
-        public ActionResult<String> GetItemInCart(string name){
-            string toReturn = "";
-            foreach(CartItem item in cart.ItemsInCart){
-                if(item.Name.Equals(name)){
-                    toReturn = item.ToString();
-                    System.Console.WriteLine(item.ToString());
+        public async Task<ActionResult<CartItem>> GetItemInCart(string name){
+                var todo = await _cdb.Cart.Where(m => m.Name  == name).ToListAsync();
+                
+                if(todo == null)
+                {
+                    return NotFound();
                 }
-                else{
-                    toReturn = "Item Name Not Found";
-                }
+
+                return Ok(todo);
             }
-            System.Console.WriteLine("End Getting");
-            return toReturn;
-        }
         
         [HttpGet]
         [Route("allitems")]

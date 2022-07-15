@@ -1,13 +1,24 @@
 using StackExchange.Redis;
 using System;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
-var multiplexer = ConnectionMultiplexer.Connect("localhost");
-builder.Services.AddSingleton<IConnectionMultiplexer>(multiplexer);
+builder.Services.AddDbContext<CartDB>(opt => opt.UseInMemoryDatabase("Cart"));
+//var multiplexer = ConnectionMultiplexer.Connect("localhost");
+//builder.Services.AddSingleton<IConnectionMultiplexer>(multiplexer);
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(
+        policy =>
+        {
+            policy.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+        });
+});
 var app = builder.Build();
 
 app.MapControllers();
+app.UseCors();
 
 app.MapGet("/", () => "Hello World!");
 
