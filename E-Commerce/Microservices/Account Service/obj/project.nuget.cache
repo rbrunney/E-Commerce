@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6/EtVXxnnDKITtswepp72rxKBnMqSAZmvteQMpy6pMX97Twdy0ZnWlYnGxMZxFuh6rkDpjxCrdKb5xPgmFQ80Q==",
+  "dgSpecHash": "Npke1w0DhHU5I2xUDxK3svvGRTSzG6c9nzkTltXvxhygY1VbfRk0V10kbLEY43BStxXqNdO7yZ/1HpGvkj9yug==",
   "success": true,
-  "projectFilePath": "C:\\Users\\JoshuaJohnson\\Documents\\GitHub\\E-Commerce\\E-Commerce\\Microservices\\Account Service\\Account Service.csproj",
+  "projectFilePath": "c:\\Users\\JoshuaJohnson\\Documents\\GitHub\\E-Commerce\\E-Commerce\\Microservices\\Account Service\\Account Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\JoshuaJohnson\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\JoshuaJohnson\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
