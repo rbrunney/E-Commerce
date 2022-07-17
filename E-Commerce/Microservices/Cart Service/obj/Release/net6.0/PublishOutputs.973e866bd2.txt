@@ -1,0 +1,26 @@
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Cart Service\bin\Release\net6.0\publish\Cart Service.exe
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Cart Service\bin\Release\net6.0\publish\appsettings.Development.json
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Cart Service\bin\Release\net6.0\publish\appsettings.json
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Cart Service\bin\Release\net6.0\publish\Cart Service.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Cart Service\bin\Release\net6.0\publish\Cart Service.deps.json
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Cart Service\bin\Release\net6.0\publish\Cart Service.runtimeconfig.json
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Cart Service\bin\Release\net6.0\publish\Cart Service.pdb
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Cart Service\bin\Release\net6.0\publish\Microsoft.EntityFrameworkCore.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Cart Service\bin\Release\net6.0\publish\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Cart Service\bin\Release\net6.0\publish\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Cart Service\bin\Release\net6.0\publish\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Cart Service\bin\Release\net6.0\publish\Microsoft.Win32.SystemEvents.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Cart Service\bin\Release\net6.0\publish\Pipelines.Sockets.Unofficial.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Cart Service\bin\Release\net6.0\publish\StackExchange.Redis.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Cart Service\bin\Release\net6.0\publish\System.Configuration.ConfigurationManager.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Cart Service\bin\Release\net6.0\publish\System.Diagnostics.PerformanceCounter.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Cart Service\bin\Release\net6.0\publish\System.Drawing.Common.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Cart Service\bin\Release\net6.0\publish\System.Security.Cryptography.ProtectedData.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Cart Service\bin\Release\net6.0\publish\System.Security.Permissions.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Cart Service\bin\Release\net6.0\publish\System.Windows.Extensions.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Cart Service\bin\Release\net6.0\publish\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Cart Service\bin\Release\net6.0\publish\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Cart Service\bin\Release\net6.0\publish\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Cart Service\bin\Release\net6.0\publish\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Cart Service\bin\Release\net6.0\publish\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Cart Service\bin\Release\net6.0\publish\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll

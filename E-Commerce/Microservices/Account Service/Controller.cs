@@ -30,13 +30,6 @@ namespace Controllers
             return Results.Created($"/{account.Email}", account);
         }
 
-        [HttpGet]
-        [Route("allitems")]
-        public async Task<ActionResult<List<Account>>> GetAllItems()
-        {
-            return await _ACDB.Accounts.ToListAsync();
-        }
-
         [HttpGet("{email}")]
         public async Task<ActionResult<Account>> GetTodoItem(string email)
         {

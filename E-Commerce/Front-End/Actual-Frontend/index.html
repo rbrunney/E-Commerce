@@ -6,13 +6,67 @@
         </head>
         <body>
             <nav>
-                <a href="profile.html">Profile</a>
                 <a href="catalog.html">Add to Catalog</a>
             </nav>
             <h1>E-Commerce</h1>
             <h3>Home Page</h3>
-
-            
+            <h2>Search</h2>
+            <form>
+                <input id="searchCatalog" type="text" placeholder="Search Catalog">
+                <br>
+                <button id="searchButton" type="button" onclick="search()">Search</button> 
+            </form>
+            <table id="catalog">
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>UnitPrice</th>
+                </tr>
+            </table>
+            <br>
+            <h2>Cart</h2>
+            <table id="cart">
+                <tr>
+                    <th>Name</th>
+                    <th>QTY</th>
+                </tr>
+            </table>
+            <br>
+            <form id="accountForm">
+                <input id="firstName" type="text" placeholder="FirstName" required="required">
+                <br>
+                <input id="lastName" type="text" placeholder="LastName" required="required">
+                <br>
+                <input id="email" type="text" placeholder="Email" required="required">
+                <br>
+                <input id="password" type="text" placeholder="Password" required="required">
+                <br>
+                <input id="cardNum" type="text" placeholder="CardNum" required="required">
+                <br>
+                ExpMonth:
+                <br>
+                <input type="text" id="expMonth" placeholder="Enter Expiration Month" required="required">
+                <br>
+                ExpDay:
+                <br>
+                <input type="text" id="expDay" placeholder="Enter Expiration Day" required="required">
+                <br>
+                ExpYear:
+                <br>
+                <input type="text" id="expYear" placeholder="Enter Expiration Year" required="required">
+                <br>
+                <input id="securityNum" type="text" placeholder="SecurityNum" required="required">
+                <br>
+                <input id="street" type="text" placeholder="Street" required="required">
+                <br>
+                <input id="city" type="text" placeholder="City" required="required">
+                <br>
+                <input id="state" type="text" placeholder="State" required="required">
+                <br>
+                <input id="zipCode" type="text" placeholder="ZipCode" required="required">
+                <br>
+                <button id="checkOutBtn" onclick="checkOut()" type="button">Check Out</button>
+            </form>
         </body>
         <script src='index.js'></script>
     </html>

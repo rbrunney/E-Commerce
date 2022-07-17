@@ -20,6 +20,15 @@ services:
       - "27700:5009"
     networks:
       - basenetwork
+
+  cart_service:
+    build: ./docker/cart_service
+    image: ecommerce-cartservice:1.0
+    container_name: cart_service
+    ports:
+      - "30100:5278"
+    networks:
+      - basenetwork
   
   email_service:
     build: ./docker/email_service
@@ -69,6 +78,8 @@ services:
   order_database:
     image: "mongo:latest"
     container_name: order-database
+    environment:
+      MONGO_INITDB_DATABASE: "OrdersDB"
     ports:
       - "28800:27017"
     networks:
@@ -83,7 +94,18 @@ services:
       - "27106:27017"
     networks:
       - basenetwork
-      
+
+  account_database:
+    image: "mcr.microsoft.com/mssql/server"
+    container_name: sqlserver
+    environment:
+        SA_PASSWORD: "abc123!!@"
+        ACCEPT_EULA: "Y"
+    ports:
+      - "30000:1433"
+    networks:
+      - basenetwork
+  
 networks:
   basenetwork:
     name: "ecommerce"

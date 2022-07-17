@@ -6,7 +6,7 @@ import com.neumont.edu.sen300.emailservice.models.SendMail;
 
 @RestController
 @RequestMapping("/email")
-@CrossOrigin(origins = "*")
+@CrossOrigin()
 public class EmailController {
 
     /**

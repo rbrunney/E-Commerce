@@ -36,15 +36,15 @@ namespace Controllers
 
         [HttpGet("{name}")]
         public async Task<ActionResult<CartItem>> GetItemInCart(string name){
-                var todo = await _cdb.Cart.Where(m => m.Name  == name).ToListAsync();
-                
-                if(todo == null)
-                {
-                    return NotFound();
-                }
-
-                return Ok(todo);
+            var todo = await _cdb.Cart.Where(m => m.Name  == name).ToListAsync();
+            
+            if(todo == null)
+            {
+                return NotFound();
             }
+
+            return Ok(todo);
+        }
         
         [HttpGet]
         [Route("allitems")]
@@ -52,9 +52,9 @@ namespace Controllers
             return await _cdb.Cart.ToListAsync();
         }
 
-        [HttpPost]
+        [HttpDelete]
         [Route("checkout")]
-        public async void checkout(Account account){
+        public void checkout(Account account){
 
             //call email service
             //call order service
