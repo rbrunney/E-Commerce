@@ -48,13 +48,19 @@ namespace Controllers
         
         [HttpGet]
         [Route("allitems")]
-        public ActionResult<String> GetAllItemsInCart(){
-            StringBuilder sb = new StringBuilder();
-            foreach(CartItem item in cart.ItemsInCart)
-            {
-                sb.Append(item.ToString());
-            }
-            return sb.ToString();
-            }
+        public async Task<ActionResult<List<CartItem>>> GetAllItemsInCart(){
+            return await _cdb.Cart.ToListAsync();
+        }
+
+        [HttpPost]
+        [Route("checkout")]
+        public async void checkout(Account account){
+
+            //call email service
+            //call order service
+
+            //empty the cart
+            _cdb.Database.EnsureDeleted();
         }
     }
+}
