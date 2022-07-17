@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/order")
+@CrossOrigin(origins = "*")
 public class OrderController {
     @Autowired
     private OrderRepository orderRepo;
