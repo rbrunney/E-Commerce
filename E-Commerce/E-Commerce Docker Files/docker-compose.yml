@@ -16,8 +16,11 @@ services:
     build: ./docker/account_service
     image: ecommerce-accountservice:1.0
     container_name: account-service
+    depends_on:
+      - registration_service
+      - account_database
     ports:
-      - "27700:5009"
+      - "10000:5009"
     networks:
       - basenetwork
 
@@ -25,8 +28,10 @@ services:
     build: ./docker/cart_service
     image: ecommerce-cartservice:1.0
     container_name: cart_service
+    depends_on:
+      - registration_service
     ports:
-      - "30100:5278"
+      - "10001:5278"
     networks:
       - basenetwork
   
@@ -34,8 +39,10 @@ services:
     build: ./docker/email_service
     image: ecommerce-emailservice:1.0
     container_name: email-service
+    depends_on:
+      - registration_service
     ports: 
-      - "27800:8080"
+      - "10002:8080"
     networks:
       - basenetwork
 
@@ -43,8 +50,10 @@ services:
     build: ./docker/payment_service
     image: ecommerce-payment_service:1.0
     container_name: payment-service
+    depends_on:
+      - registration_service
     ports:
-      - "27900:8081"
+      - "10003:8080"
     networks:
       - basenetwork
 
@@ -52,8 +61,11 @@ services:
     build: ./docker/order_service
     image: ecommerce-order_service:1.0
     container_name: order-service
+    depends_on:
+      - registration_service
+      - order_database
     ports:
-      - "28900:8080"
+      - "10004:8080"
     networks:
       - basenetwork
 
@@ -61,8 +73,11 @@ services:
     build: ./docker/catalog_service
     image: ecommerce-catalog_service:1.0
     container_name: catalog_service
+    depends_on:
+      - registration_service
+      - item_database
     ports:
-      - "29000:5130"
+      - "10005:5130"
     networks:
       - basenetwork
 
@@ -81,7 +96,7 @@ services:
     environment:
       MONGO_INITDB_DATABASE: "OrdersDB"
     ports:
-      - "28800:27017"
+      - "10006:27017"
     networks:
       - basenetwork
 
@@ -91,7 +106,7 @@ services:
     environment:
       - MONGO_INITDB_DATABASE=ItemDb
     ports: 
-      - "27106:27017"
+      - "10007:27017"
     networks:
       - basenetwork
 
@@ -99,12 +114,20 @@ services:
     image: "mcr.microsoft.com/mssql/server"
     container_name: sqlserver
     environment:
-        SA_PASSWORD: "abc123!!@"
-        ACCEPT_EULA: "Y"
+      SA_PASSWORD: "abc123!!@"
+      ACCEPT_EULA: "Y"
     ports:
-      - "30000:1433"
+      - "10008:1433"
     networks:
       - basenetwork
+
+  registration_service:
+    image: "steeltoeoss/eureka-server"
+    container_name: "eureka"
+    ports:
+      - "10009:8761"
+    networks:
+    - basenetwork
   
 networks:
   basenetwork:

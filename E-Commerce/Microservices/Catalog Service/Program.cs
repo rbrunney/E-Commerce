@@ -1,7 +1,9 @@
 using Model;
+using Steeltoe.Discovery.Client;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
+builder.Services.AddDiscoveryClient(builder.Configuration);
 
 builder.Services.Configure<ItemDatabaseSettings>(builder.Configuration.GetSection("ItemDatabase"));
 builder.Services.AddSingleton<Ser.ItemService2>();

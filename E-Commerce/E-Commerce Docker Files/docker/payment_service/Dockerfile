@@ -5,4 +5,4 @@ COPY PaymentService-1.0.0.jar /usr/local/lib/PaymentService.jar
 
 ENTRYPOINT ["java","-jar","/usr/local/lib/PaymentService.jar"]
 
-EXPOSE 8081
+EXPOSE 8080
