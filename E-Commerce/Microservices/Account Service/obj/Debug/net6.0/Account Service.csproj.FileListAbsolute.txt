@@ -52,13 +52,67 @@ C:\Users\JoshuaJohnson\Documents\GitHub\E-Commerce\E-Commerce\Microservices\Acco
 C:\Users\JoshuaJohnson\Documents\GitHub\E-Commerce\E-Commerce\Microservices\Account Service\obj\Debug\net6.0\Account Service.pdb
 C:\Users\JoshuaJohnson\Documents\GitHub\E-Commerce\E-Commerce\Microservices\Account Service\obj\Debug\net6.0\Account Service.genruntimeconfig.cache
 C:\Users\JoshuaJohnson\Documents\GitHub\E-Commerce\E-Commerce\Microservices\Account Service\obj\Debug\net6.0\ref\Account Service.dll
-C:\Users\JoshuaJohnson\Documents\GitHub\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\Steeltoe.Common.dll
-C:\Users\JoshuaJohnson\Documents\GitHub\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\Steeltoe.Common.Abstractions.dll
-C:\Users\JoshuaJohnson\Documents\GitHub\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\Steeltoe.Common.Http.dll
-C:\Users\JoshuaJohnson\Documents\GitHub\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\Steeltoe.Connector.Abstractions.dll
-C:\Users\JoshuaJohnson\Documents\GitHub\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\Steeltoe.Connector.ConnectorBase.dll
-C:\Users\JoshuaJohnson\Documents\GitHub\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\Steeltoe.Discovery.Abstractions.dll
-C:\Users\JoshuaJohnson\Documents\GitHub\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\Steeltoe.Discovery.ClientBase.dll
-C:\Users\JoshuaJohnson\Documents\GitHub\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\Steeltoe.Discovery.Eureka.dll
-C:\Users\JoshuaJohnson\Documents\GitHub\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\Steeltoe.Extensions.Configuration.Abstractions.dll
-C:\Users\JoshuaJohnson\Documents\GitHub\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\System.Reflection.MetadataLoadContext.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\appsettings.json
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\Account Service.exe
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\Account Service.deps.json
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\Account Service.runtimeconfig.json
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\Account Service.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\Account Service.pdb
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\Steeltoe.Common.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\Steeltoe.Common.Abstractions.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\Steeltoe.Common.Http.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\Steeltoe.Connector.Abstractions.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\Steeltoe.Connector.ConnectorBase.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\Steeltoe.Discovery.Abstractions.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\Steeltoe.Discovery.ClientBase.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\Steeltoe.Discovery.Eureka.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\Steeltoe.Extensions.Configuration.Abstractions.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\System.Reflection.MetadataLoadContext.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\obj\Debug\net6.0\Account Service.csproj.AssemblyReference.cache
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\obj\Debug\net6.0\Account Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\obj\Debug\net6.0\Account Service.AssemblyInfoInputs.cache
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\obj\Debug\net6.0\Account Service.AssemblyInfo.cs
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\obj\Debug\net6.0\Account Service.csproj.CoreCompileInputs.cache
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\obj\Debug\net6.0\Account Service.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\obj\Debug\net6.0\scopedcss\bundle\Account Service.styles.css
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\obj\Debug\net6.0\Account Service.csproj.CopyComplete
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\obj\Debug\net6.0\Account Service.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\obj\Debug\net6.0\refint\Account Service.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\obj\Debug\net6.0\Account Service.pdb
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\obj\Debug\net6.0\Account Service.genruntimeconfig.cache
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Account Service\obj\Debug\net6.0\ref\Account Service.dll
