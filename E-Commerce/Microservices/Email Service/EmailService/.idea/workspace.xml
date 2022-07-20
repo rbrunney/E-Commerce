@@ -5,17 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e15ab21-2d56-4ef4-8726-a5bbdf73589b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../E-Commerce Docker Files/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../E-Commerce Docker Files/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../E-Commerce Docker Files/docker/payment_service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../../E-Commerce Docker Files/docker/payment_service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Account Service/obj/Debug/net6.0/Account Service.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Account Service/obj/Debug/net6.0/Account Service.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neumont/edu/sen300/emailservice/EmailServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neumont/edu/sen300/emailservice/EmailServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Order Service/OrderService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Order Service/OrderService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Order Service/OrderService/src/main/java/com/neumont/edu/sen300/orderservice/OrderServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Order Service/OrderService/src/main/java/com/neumont/edu/sen300/orderservice/OrderServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Order Service/OrderService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Order Service/OrderService/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Order Service/OrderService/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Order Service/OrderService/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Payment Service/PaymentService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Payment Service/PaymentService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Order Service/OrderService/target/OrderService-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../Order Service/OrderService/target/OrderService-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Order Service/OrderService/target/OrderService-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/../../Order Service/OrderService/target/OrderService-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Order Service/OrderService/target/surefire-reports/TEST-com.neumont.edu.sen300.orderservice.OrderServiceApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Order Service/OrderService/target/surefire-reports/TEST-com.neumont.edu.sen300.orderservice.OrderServiceApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Order Service/OrderService/target/surefire-reports/com.neumont.edu.sen300.orderservice.OrderServiceApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Order Service/OrderService/target/surefire-reports/com.neumont.edu.sen300.orderservice.OrderServiceApplicationTests.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,22 +37,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "spring.configuration.checksum": "be7345c66fe9574d454298a08f8f36e2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;be7345c66fe9574d454298a08f8f36e2&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="EmailServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="EmailService" />
@@ -78,8 +69,6 @@
       <workItem from="1657573484699" duration="620000" />
       <workItem from="1657654258090" duration="64000" />
       <workItem from="1658091795024" duration="1499000" />
-      <workItem from="1658272377115" duration="4000" />
-      <workItem from="1658272388261" duration="300000" />
     </task>
     <servers />
   </component>
