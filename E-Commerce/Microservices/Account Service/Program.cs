@@ -21,5 +21,13 @@ app.MapControllers();
 app.UseCors();
 
 app.MapGet("/", () => "To access the account api please enter /account/help for more information ");
+app.MapGet("/catalogitems", async (IDiscoveryClient idc) =>
+{
+//return "this is the root of dotnet-eureka-client";
+    DiscoveryHttpClientHandler _handler = new DiscoveryHttpClientHandler(idc);
+    var client = new HttpClient(_handler, false);
+    return await client.GetStringAsync("http://CATALOG-SERVICE/ecommerce/getallitems");
+}
+);
 
 app.Run();

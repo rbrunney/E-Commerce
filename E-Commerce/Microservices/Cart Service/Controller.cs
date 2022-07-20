@@ -2,6 +2,10 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using StackExchange.Redis;
 using System.Text;
+using Steeltoe.Common.Discovery;
+using Steeltoe.Discovery.Eureka;
+using Steeltoe.Discovery;
+
 namespace Controllers
 {
 
@@ -26,7 +30,6 @@ namespace Controllers
         //     string? value = db.StringGet("mykey");
         //     Console.WriteLine("This is the redis value: {0}", value);
         // }
-
         [HttpPost]
         public async Task<IResult> AddItemToCart(CartItem item){
             _cdb.Cart.Add(item);
