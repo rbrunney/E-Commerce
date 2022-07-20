@@ -55,6 +55,10 @@
             "StackExchange.Redis": {
               "target": "Package",
               "version": "[2.6.48, )"
+            },
+            "Steeltoe.Discovery.Eureka": {
+              "target": "Package",
+              "version": "[3.2.0, )"
             }
           },
           "imports": [
