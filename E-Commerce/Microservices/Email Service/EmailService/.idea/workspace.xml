@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e15ab21-2d56-4ef4-8726-a5bbdf73589b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Account Service/obj/Debug/net6.0/Account Service.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Account Service/obj/Debug/net6.0/Account Service.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Order Service/OrderService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Order Service/OrderService/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Order Service/OrderService/target/OrderService-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../Order Service/OrderService/target/OrderService-0.0.1-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Order Service/OrderService/target/OrderService-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/../../Order Service/OrderService/target/OrderService-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Order Service/OrderService/target/surefire-reports/TEST-com.neumont.edu.sen300.orderservice.OrderServiceApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Order Service/OrderService/target/surefire-reports/TEST-com.neumont.edu.sen300.orderservice.OrderServiceApplicationTests.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Order Service/OrderService/target/surefire-reports/com.neumont.edu.sen300.orderservice.OrderServiceApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Order Service/OrderService/target/surefire-reports/com.neumont.edu.sen300.orderservice.OrderServiceApplicationTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Payment Service/PaymentService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Payment Service/PaymentService/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +71,7 @@
       <workItem from="1657573484699" duration="620000" />
       <workItem from="1657654258090" duration="64000" />
       <workItem from="1658091795024" duration="1499000" />
+      <workItem from="1658347711752" duration="492000" />
     </task>
     <servers />
   </component>
