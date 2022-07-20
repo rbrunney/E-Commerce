@@ -30,6 +30,15 @@ namespace Controllers
         //     string? value = db.StringGet("mykey");
         //     Console.WriteLine("This is the redis value: {0}", value);
         // }
+
+        [HttpGet]
+        [Route("/catalogeitems")]
+        public async Task<string> catalogeItems(IDiscoveryClient idc){
+            DiscoveryHttpClientHandler _handler = new DiscoveryHttpClientHandler(idc);
+            var client = new HttpClient(_handler, false);
+            return await client.GetStringAsync("http://CATALOG-SERVICE/ecommerce/getallitems");
+        }
+
         [HttpPost]
         public async Task<IResult> AddItemToCart(CartItem item){
             _cdb.Cart.Add(item);
