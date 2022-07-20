@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\JoshuaJohnson\\Documents\\GitHub\\E-Commerce\\E-Commerce\\Microservices\\Account Service\\Account Service.csproj": {}
+    "c:\\Users\\JoshuaJohnson\\Documents\\GitHub\\E-Commerce\\E-Commerce\\Microservices\\Account Service\\Account Service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\JoshuaJohnson\\Documents\\GitHub\\E-Commerce\\E-Commerce\\Microservices\\Account Service\\Account Service.csproj": {
+    "c:\\Users\\JoshuaJohnson\\Documents\\GitHub\\E-Commerce\\E-Commerce\\Microservices\\Account Service\\Account Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JoshuaJohnson\\Documents\\GitHub\\E-Commerce\\E-Commerce\\Microservices\\Account Service\\Account Service.csproj",
+        "projectUniqueName": "c:\\Users\\JoshuaJohnson\\Documents\\GitHub\\E-Commerce\\E-Commerce\\Microservices\\Account Service\\Account Service.csproj",
         "projectName": "Account Service",
-        "projectPath": "C:\\Users\\JoshuaJohnson\\Documents\\GitHub\\E-Commerce\\E-Commerce\\Microservices\\Account Service\\Account Service.csproj",
+        "projectPath": "c:\\Users\\JoshuaJohnson\\Documents\\GitHub\\E-Commerce\\E-Commerce\\Microservices\\Account Service\\Account Service.csproj",
         "packagesPath": "C:\\Users\\JoshuaJohnson\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JoshuaJohnson\\Documents\\GitHub\\E-Commerce\\E-Commerce\\Microservices\\Account Service\\obj\\",
+        "outputPath": "c:\\Users\\JoshuaJohnson\\Documents\\GitHub\\E-Commerce\\E-Commerce\\Microservices\\Account Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\JoshuaJohnson\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -43,10 +43,6 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.6, )"
-            },
-            "Steeltoe.Discovery.Eureka": {
-              "target": "Package",
-              "version": "[3.2.0, )"
             }
           },
           "imports": [

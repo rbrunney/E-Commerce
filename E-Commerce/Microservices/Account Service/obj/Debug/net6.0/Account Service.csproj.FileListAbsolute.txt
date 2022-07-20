@@ -52,13 +52,3 @@ C:\Users\JoshuaJohnson\Documents\GitHub\E-Commerce\E-Commerce\Microservices\Acco
 C:\Users\JoshuaJohnson\Documents\GitHub\E-Commerce\E-Commerce\Microservices\Account Service\obj\Debug\net6.0\Account Service.pdb
 C:\Users\JoshuaJohnson\Documents\GitHub\E-Commerce\E-Commerce\Microservices\Account Service\obj\Debug\net6.0\Account Service.genruntimeconfig.cache
 C:\Users\JoshuaJohnson\Documents\GitHub\E-Commerce\E-Commerce\Microservices\Account Service\obj\Debug\net6.0\ref\Account Service.dll
-C:\Users\JoshuaJohnson\Documents\GitHub\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\Steeltoe.Common.dll
-C:\Users\JoshuaJohnson\Documents\GitHub\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\Steeltoe.Common.Abstractions.dll
-C:\Users\JoshuaJohnson\Documents\GitHub\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\Steeltoe.Common.Http.dll
-C:\Users\JoshuaJohnson\Documents\GitHub\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\Steeltoe.Connector.Abstractions.dll
-C:\Users\JoshuaJohnson\Documents\GitHub\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\Steeltoe.Connector.ConnectorBase.dll
-C:\Users\JoshuaJohnson\Documents\GitHub\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\Steeltoe.Discovery.Abstractions.dll
-C:\Users\JoshuaJohnson\Documents\GitHub\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\Steeltoe.Discovery.ClientBase.dll
-C:\Users\JoshuaJohnson\Documents\GitHub\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\Steeltoe.Discovery.Eureka.dll
-C:\Users\JoshuaJohnson\Documents\GitHub\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\Steeltoe.Extensions.Configuration.Abstractions.dll
-C:\Users\JoshuaJohnson\Documents\GitHub\E-Commerce\E-Commerce\Microservices\Account Service\bin\Debug\net6.0\System.Reflection.MetadataLoadContext.dll
