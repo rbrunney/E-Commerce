@@ -8,6 +8,7 @@ using Steeltoe.Discovery;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
+builder.Services.AddDiscoveryClient(builder.Configuration);
 builder.Services.AddDbContext<CartDB>(opt => opt.UseInMemoryDatabase("Cart"));
 //var multiplexer = ConnectionMultiplexer.Connect("localhost");
 //builder.Services.AddSingleton<IConnectionMultiplexer>(multiplexer);
