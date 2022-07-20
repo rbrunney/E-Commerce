@@ -32,11 +32,13 @@ namespace Controllers
         // }
 
         [HttpGet]
-        [Route("/catalogeitems")]
-        public async Task<string> catalogeItems(IDiscoveryClient idc){
+        [Route("/catalogitems")]
+        public async Task<HttpResponseMessage> catalogeItems(IDiscoveryClient idc){
             DiscoveryHttpClientHandler _handler = new DiscoveryHttpClientHandler(idc);
             var client = new HttpClient(_handler, false);
-            return await client.GetStringAsync("http://CATALOG-SERVICE/ecommerce/getallitems");
+            var temp = await client.GetAsync("http://CATALOG-SERVICE/ecommerce/getallitems");
+            System.Console.WriteLine("I am Here, and not dead");
+            return await client.GetAsync("http://CATALOG-SERVICE/ecommerce/getallitems");
         }
 
         [HttpPost]
