@@ -112,11 +112,9 @@ services:
       - basenetwork
 
   account_database:
-    image: "mcr.microsoft.com/mssql/server"
+    build: ./docker/sql_creation
+    image: sql-test-creation:1.0
     container_name: sqlserver
-    environment:
-      SA_PASSWORD: "abc123!!@"
-      ACCEPT_EULA: "Y"
     ports:
       - "10008:1433"
     networks:
