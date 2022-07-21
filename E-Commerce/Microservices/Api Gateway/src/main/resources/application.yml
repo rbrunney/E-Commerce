@@ -1,0 +1,47 @@
+server:
+  port: 8888
+ 
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+      #defaultZone: http://eureka.c:8761/eureka
+
+spring:
+  application:
+    name: ecommerce-api-gateway
+  cloud:
+    gateway:
+      routes:
+      - id: payment_service
+        uri: lb://PAYMENT-SERVICE
+        predicates:
+        - Path=/payment/**
+        
+      - id: email_service
+        uri: lb://EMAIL-SERVICE
+        predicates:
+        - Path=/email/**
+
+      - id: order_service
+        uri: lb://ORDER-SERVICE       
+        predicates:
+        - Path=/order/**        
+        #you can now hit this api gateway via: http://localhost:8888/api1/abc
+
+      - id: catalog_service
+        uri: lb://CATALOG-SERVICE
+        predicates:
+        - Path=/ecommerce/**
+        #you can now hit endpoint like: http://localhost:8888/test1 this somehow maps to the minimal api endpoints
+
+      - id: account_service
+        uri: lb://ACCOUNT-SERVICE
+        predicates:
+        - Path=/account/**
+        #you can now hit http://localhost:8888/api2
+
+      - id: cart_service
+        uri: lb://CART-SERVICE
+        predicates:
+        - Path=/cart/**

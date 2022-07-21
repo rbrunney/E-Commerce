@@ -11,7 +11,17 @@ services:
   #     - "<container_port>:<virtual_port>"             # This is where you can put the desired ports
   #   networks:
   #     - <network_name_here>                           # This is where you can attach this service to a desired network 
-  
+  api_gateway:
+    build: ./docker/api_gateway
+    image: ecommerce-apigateway:1.0
+    container_name: api_gateway
+    depends_on:
+      -eureka
+    ports:
+      - "80:8888"
+    networks:
+      - basenetwork
+
   account_service:
     build: ./docker/account_service
     image: ecommerce-accountservice:1.0
@@ -78,15 +88,6 @@ services:
       - item_database
     ports:
       - "10005:5130"
-    networks:
-      - basenetwork
-
-  nginx:
-    build: ./docker/nginx
-    image: nginx:1.0
-    container_name: ecommerce-site
-    ports:
-      - "80:80"
     networks:
       - basenetwork
 
