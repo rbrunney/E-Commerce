@@ -81,14 +81,14 @@ services:
     networks:
       - basenetwork
 
-  nginx:
-    build: ./docker/nginx
-    image: nginx:1.0
-    container_name: ecommerce-site
-    ports:
-      - "80:80"
-    networks:
-      - basenetwork
+  # nginx:
+  #   build: ./docker/nginx
+  #   image: nginx:1.0
+  #   container_name: ecommerce-site
+  #   ports:
+  #     - "80:80"
+  #   networks:
+  #     - basenetwork
 
   order_database:
     image: "mongo:latest"

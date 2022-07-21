@@ -36,8 +36,6 @@ namespace Controllers
         public async Task<HttpResponseMessage> catalogeItems(IDiscoveryClient idc){
             DiscoveryHttpClientHandler _handler = new DiscoveryHttpClientHandler(idc);
             var client = new HttpClient(_handler, false);
-            var temp = await client.GetAsync("http://CATALOG-SERVICE/ecommerce/getallitems");
-            System.Console.WriteLine("I am Here, and not dead");
             return await client.GetAsync("http://CATALOG-SERVICE/ecommerce/getallitems");
         }
 

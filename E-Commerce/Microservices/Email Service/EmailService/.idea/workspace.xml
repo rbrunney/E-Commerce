@@ -5,14 +5,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e15ab21-2d56-4ef4-8726-a5bbdf73589b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../E-Commerce Docker Files/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../E-Commerce Docker Files/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../E-Commerce Docker Files/docker/cart_service/publish/Cart Service.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../E-Commerce Docker Files/docker/cart_service/publish/Cart Service.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../E-Commerce Docker Files/docker/cart_service/publish/Cart Service.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../E-Commerce Docker Files/docker/cart_service/publish/Cart Service.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Account Service/obj/Account Service.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Account Service/obj/Account Service.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Account Service/obj/Account Service.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../../Account Service/obj/Account Service.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Account Service/obj/Debug/net6.0/Account Service.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../../Account Service/obj/Debug/net6.0/Account Service.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Account Service/obj/Debug/net6.0/Account Service.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Account Service/obj/Debug/net6.0/Account Service.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Account Service/obj/Debug/net6.0/Account Service.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Account Service/obj/Debug/net6.0/Account Service.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Account Service/obj/Debug/net6.0/Account Service.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Account Service/obj/Debug/net6.0/Account Service.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Account Service/obj/Debug/net6.0/project.razor.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Account Service/obj/Debug/net6.0/project.razor.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Account Service/obj/Debug/net6.0/refint/Account Service.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Account Service/obj/Debug/net6.0/refint/Account Service.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Account Service/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Account Service/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Account Service/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Account Service/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Account Service/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/../../Account Service/obj/staticwebassets.pack.sentinel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cart Service/Controller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Cart Service/Controller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cart Service/bin/Release/net6.0/Cart Service.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Cart Service/bin/Release/net6.0/Cart Service.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cart Service/bin/Release/net6.0/Cart Service.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Cart Service/bin/Release/net6.0/Cart Service.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cart Service/bin/Release/net6.0/publish/Cart Service.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Cart Service/bin/Release/net6.0/publish/Cart Service.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cart Service/bin/Release/net6.0/publish/Cart Service.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Cart Service/bin/Release/net6.0/publish/Cart Service.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cart Service/obj/Cart Service.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Cart Service/obj/Cart Service.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cart Service/obj/Cart Service.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../../Cart Service/obj/Cart Service.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cart Service/obj/Debug/net6.0/Cart Service.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../../Cart Service/obj/Debug/net6.0/Cart Service.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cart Service/obj/Debug/net6.0/Cart Service.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Cart Service/obj/Debug/net6.0/Cart Service.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cart Service/obj/Debug/net6.0/project.razor.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Cart Service/obj/Debug/net6.0/project.razor.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cart Service/obj/Release/net6.0/Cart Service.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../../Cart Service/obj/Release/net6.0/Cart Service.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cart Service/obj/Release/net6.0/Cart Service.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Cart Service/obj/Release/net6.0/Cart Service.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cart Service/obj/Release/net6.0/Cart Service.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Cart Service/obj/Release/net6.0/Cart Service.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cart Service/obj/Release/net6.0/Cart Service.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Cart Service/obj/Release/net6.0/Cart Service.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cart Service/obj/Release/net6.0/Cart Service.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Cart Service/obj/Release/net6.0/Cart Service.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cart Service/obj/Release/net6.0/Cart Service.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Cart Service/obj/Release/net6.0/Cart Service.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cart Service/obj/Release/net6.0/Cart Service.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Cart Service/obj/Release/net6.0/Cart Service.genruntimeconfig.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cart Service/obj/Release/net6.0/Cart Service.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Cart Service/obj/Release/net6.0/Cart Service.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cart Service/obj/Release/net6.0/PublishOutputs.973e866bd2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Cart Service/obj/Release/net6.0/PublishOutputs.973e866bd2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cart Service/obj/Release/net6.0/ref/Cart Service.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Cart Service/obj/Release/net6.0/ref/Cart Service.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cart Service/obj/Release/net6.0/refint/Cart Service.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Cart Service/obj/Release/net6.0/refint/Cart Service.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cart Service/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Cart Service/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cart Service/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Cart Service/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cart Service/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/../../Cart Service/obj/staticwebassets.pack.sentinel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Catalog Service/obj/Debug/net6.0/Catalog Service.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Catalog Service/obj/Debug/net6.0/Catalog Service.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Order Service/OrderService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Order Service/OrderService/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Order Service/OrderService/target/OrderService-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../Order Service/OrderService/target/OrderService-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Order Service/OrderService/target/OrderService-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/../../Order Service/OrderService/target/OrderService-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Order Service/OrderService/target/surefire-reports/TEST-com.neumont.edu.sen300.orderservice.OrderServiceApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Order Service/OrderService/target/surefire-reports/TEST-com.neumont.edu.sen300.orderservice.OrderServiceApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Order Service/OrderService/target/surefire-reports/com.neumont.edu.sen300.orderservice.OrderServiceApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Order Service/OrderService/target/surefire-reports/com.neumont.edu.sen300.orderservice.OrderServiceApplicationTests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Payment Service/PaymentService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Payment Service/PaymentService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +105,8 @@
       <workItem from="1657654258090" duration="64000" />
       <workItem from="1658091795024" duration="1499000" />
       <workItem from="1658347711752" duration="492000" />
+      <workItem from="1658429984060" duration="505000" />
+      <workItem from="1658431930472" duration="56000" />
     </task>
     <servers />
   </component>
