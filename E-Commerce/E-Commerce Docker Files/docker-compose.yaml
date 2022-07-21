@@ -80,16 +80,16 @@ services:
     networks:
       - basenetwork
 
-    cart_service3:
-      build: ./docker/cart_service
-      image: ecommerce-cartservice:1.0
-      container_name: cart_service3
-      depends_on:
-        - registration_service
-      ports:
-        - "10005:5278"
-      networks:
-        - basenetwork
+  cart_service3:
+    build: ./docker/cart_service
+    image: ecommerce-cartservice:1.0
+    container_name: cart_service3
+    depends_on:
+      - registration_service
+    ports:
+      - "10005:5278"
+    networks:
+      - basenetwork
   
   email_service:
     build: ./docker/email_service
