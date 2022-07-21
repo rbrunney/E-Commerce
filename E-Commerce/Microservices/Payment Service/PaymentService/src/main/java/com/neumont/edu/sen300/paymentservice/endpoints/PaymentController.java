@@ -14,7 +14,9 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
+import java.net.InetAddress;
 import java.net.URL;
+import java.net.UnknownHostException;
 import java.time.LocalDate;
 import java.util.HashMap;
 
@@ -22,6 +24,11 @@ import java.util.HashMap;
 @RequestMapping("/payment")
 @CrossOrigin()
 public class PaymentController {
+
+    @GetMapping("/getIP")
+    public String getIPAddress() throws UnknownHostException {
+        return InetAddress.getLocalHost().toString();
+    }
 
     /**
      * End-point to check if a credit card has not yet expired

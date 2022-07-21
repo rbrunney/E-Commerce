@@ -14,6 +14,16 @@ C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Comme
 C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Catalog Service\bin\Release\net6.0\publish\MongoDB.Driver.Core.dll
 C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Catalog Service\bin\Release\net6.0\publish\MongoDB.Libmongocrypt.dll
 C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Catalog Service\bin\Release\net6.0\publish\SharpCompress.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Catalog Service\bin\Release\net6.0\publish\Steeltoe.Common.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Catalog Service\bin\Release\net6.0\publish\Steeltoe.Common.Abstractions.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Catalog Service\bin\Release\net6.0\publish\Steeltoe.Common.Http.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Catalog Service\bin\Release\net6.0\publish\Steeltoe.Connector.Abstractions.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Catalog Service\bin\Release\net6.0\publish\Steeltoe.Connector.ConnectorBase.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Catalog Service\bin\Release\net6.0\publish\Steeltoe.Discovery.Abstractions.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Catalog Service\bin\Release\net6.0\publish\Steeltoe.Discovery.ClientBase.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Catalog Service\bin\Release\net6.0\publish\Steeltoe.Discovery.Eureka.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Catalog Service\bin\Release\net6.0\publish\Steeltoe.Extensions.Configuration.Abstractions.dll
+C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Catalog Service\bin\Release\net6.0\publish\System.Reflection.MetadataLoadContext.dll
 C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Catalog Service\bin\Release\net6.0\publish\runtimes\linux\native\libsnappy64.so
 C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Catalog Service\bin\Release\net6.0\publish\runtimes\linux\native\libzstd.so
 C:\Users\rbrunney\OneDrive - Neumont College of Computer Science\Desktop\E-Commerce\E-Commerce\Microservices\Catalog Service\bin\Release\net6.0\publish\runtimes\osx\native\libsnappy64.dylib

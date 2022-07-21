@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.Map;
@@ -21,6 +23,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class OrderController {
     @Autowired
     private OrderRepository orderRepo;
+
+    @GetMapping("/getIP")
+    public String getIPAddress() throws UnknownHostException {
+        return InetAddress.getLocalHost().toString();
+    }
 
     /**
      * An End-point to get and Order Object from the database

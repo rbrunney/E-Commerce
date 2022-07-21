@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Ser;
+using System;
+using System.Net;
 
 namespace Controllers
 {
@@ -15,6 +17,19 @@ namespace Controllers
         }
 
 //////////////////////// All Gets //////////////////////////////////////
+
+        //Get IP Address
+        [HttpGet]
+        [Route("getIP")]
+        public string GetIP()
+        {
+            // Getting host name
+            string host = Dns.GetHostName();
+            
+            // Getting ip address using host name
+            IPHostEntry ip = Dns.GetHostEntry(host);
+            return ip.AddressList[0].ToString();
+        }
 
         //Get all items
         [HttpGet]

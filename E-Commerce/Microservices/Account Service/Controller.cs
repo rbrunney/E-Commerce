@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System;
+using System.Net;
 
 //"docker_db1": "Server=localhost,1433;database=apidb;User ID= SA;password=abc123!!@;"
 
@@ -14,6 +16,18 @@ namespace Controllers
         public Controller(ILogger<Controller> logger, AccountDB acdb)
         {            
             _ACDB = acdb;
+        }
+
+        [HttpGet]
+        [Route("getIP")]
+        public string GetIP()
+        {
+            // Getting host name
+            string host = Dns.GetHostName();
+            
+            // Getting ip address using host name
+            IPHostEntry ip = Dns.GetHostEntry(host);
+            return ip.AddressList[0].ToString();
         }
 
         [HttpGet]
