@@ -140,7 +140,11 @@ This basic E-Commerce project was made in order to learn Microservices. Some of 
     ```
     docker compose up -d
     ```
-6. A good output will look something similar to this
+6. A good output will look something similar as shown below.
+    - Images being built
+    - Containers being started
+
+    ![dockerImages](https://github.com/rbrunney/E-Commerce/blob/main/E-Commerce/DockerComposeOutput.PNG?raw=true)
 
 
 <br>
