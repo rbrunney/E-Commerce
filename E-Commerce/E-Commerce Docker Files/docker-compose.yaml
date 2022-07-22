@@ -11,6 +11,7 @@ services:
   #     - "<container_port>:<virtual_port>"             # This is where you can put the desired ports
   #   networks:
   #     - <network_name_here>                           # This is where you can attach this service to a desired network 
+  
   api_gateway:
     build: ./docker/api_gateway
     image: ecommerce-apigateway:1.0
@@ -25,209 +26,77 @@ services:
   account_service:
     build: ./docker/account_service
     image: ecommerce-accountservice:1.0
-    container_name: account-service
     depends_on:
       - registration_service
       - account_database
     ports:
-      - "10000:5009"
+      - "5009"
     networks:
       - basenetwork
-  
-  account_service2:
-    build: ./docker/account_service
-    image: ecommerce-accountservice:1.0
-    container_name: account-service2
-    depends_on:
-      - registration_service
-      - account_database
-    ports:
-      - "10001:5009"
-    networks:
-      - basenetwork
-
-  account_service3:
-    build: ./docker/account_service
-    image: ecommerce-accountservice:1.0
-    container_name: account-service3
-    depends_on:
-      - registration_service
-      - account_database
-    ports:
-      - "10002:5009"
-    networks:
-      - basenetwork
+    deploy:
+      replicas: 3
 
   cart_service:
     build: ./docker/cart_service
     image: ecommerce-cartservice:1.0
-    container_name: cart_service
     depends_on:
       - registration_service
     ports:
-      - "10003:5278"
+      - "5278"
     networks:
       - basenetwork
-
-  cart_service2:
-    build: ./docker/cart_service
-    image: ecommerce-cartservice:1.0
-    container_name: cart_service2
-    depends_on:
-      - registration_service
-    ports:
-      - "10004:5278"
-    networks:
-      - basenetwork
-
-  cart_service3:
-    build: ./docker/cart_service
-    image: ecommerce-cartservice:1.0
-    container_name: cart_service3
-    depends_on:
-      - registration_service
-    ports:
-      - "10005:5278"
-    networks:
-      - basenetwork
+    deploy:
+      replicas: 3
   
   email_service:
     build: ./docker/email_service
     image: ecommerce-emailservice:1.0
-    container_name: email-service
     depends_on:
       - registration_service
     ports: 
-      - "10006:8080"
+      - "8080"
     networks:
       - basenetwork
-
-  email_service2:
-    build: ./docker/email_service
-    image: ecommerce-emailservice:1.0
-    container_name: email-service2
-    depends_on:
-      - registration_service
-    ports: 
-      - "10007:8080"
-    networks:
-      - basenetwork
-
-  email_service3:
-    build: ./docker/email_service
-    image: ecommerce-emailservice:1.0
-    container_name: email-service3
-    depends_on:
-      - registration_service
-    ports: 
-      - "10008:8080"
-    networks:
-      - basenetwork
+    deploy:
+      replicas: 3
 
   payment_service:
     build: ./docker/payment_service
     image: ecommerce-payment_service:1.0
-    container_name: payment-service
     depends_on:
       - registration_service
     ports:
-      - "10009:8080"
+      - "8080"
     networks:
       - basenetwork
-
-  payment_service2:
-    build: ./docker/payment_service
-    image: ecommerce-payment_service:1.0
-    container_name: payment-service2
-    depends_on:
-      - registration_service
-    ports:
-      - "10010:8080"
-    networks:
-      - basenetwork
-
-  payment_service3:
-    build: ./docker/payment_service
-    image: ecommerce-payment_service:1.0
-    container_name: payment-service3
-    depends_on:
-      - registration_service
-    ports:
-      - "10011:8080"
-    networks:
-      - basenetwork
+    deploy:
+      replicas: 3
 
   order_service:
     build: ./docker/order_service
     image: ecommerce-order_service:1.0
-    container_name: order-service
     depends_on:
       - registration_service
       - order_database
     ports:
-      - "10012:8080"
+      - "8080"
     networks:
       - basenetwork
-
-  order_service2:
-    build: ./docker/order_service
-    image: ecommerce-order_service:1.0
-    container_name: order-service2
-    depends_on:
-      - registration_service
-      - order_database
-    ports:
-      - "10013:8080"
-    networks:
-      - basenetwork
-
-  order_service3:
-    build: ./docker/order_service
-    image: ecommerce-order_service:1.0
-    container_name: order-service3
-    depends_on:
-      - registration_service
-      - order_database
-    ports:
-      - "10014:8080"
-    networks:
-      - basenetwork
+    deploy:
+      replicas: 3
 
   catalog_service:
     build: ./docker/catalog_service
     image: ecommerce-catalog_service:1.0
-    container_name: catalog_service
     depends_on:
       - registration_service
       - item_database
     ports:
-      - "10015:5130"
+      - "5130"
     networks:
       - basenetwork
-
-  catalog_service2:
-    build: ./docker/catalog_service
-    image: ecommerce-catalog_service:1.0
-    container_name: catalog_service2
-    depends_on:
-      - registration_service
-      - item_database
-    ports:
-      - "10016:5130"
-    networks:
-      - basenetwork
-
-  catalog_service3:
-    build: ./docker/catalog_service
-    image: ecommerce-catalog_service:1.0
-    container_name: catalog_service3
-    depends_on:
-      - registration_service
-      - item_database
-    ports:
-      - "10017:5130"
-    networks:
-      - basenetwork
+    deploy:
+      replicas: 3
 
   order_database:
     image: "mongo:latest"
