@@ -1,14 +1,7 @@
-<style>
-    .mainTitle {
-        font-size: 50px;
-    }
-    .mainDescription {
-        font-size: 15px;
-    }
-</style>
-
 <div class="mainTitle" align="center">
-    E-Commerce
+    
+#    E-Commerce
+
 </div>
 <br>
 <div class="mainDescription" align="center">
@@ -21,7 +14,7 @@
 
 <div align="center">
 
-## Table of Contents
+### Table of Contents
 
 </div>
 
@@ -42,7 +35,7 @@
 
 ---
 
-## Description <a name="#description"></a>
+### Description <a name="#description"></a>
 ---
 </div>
 <br>
@@ -55,7 +48,7 @@ This basic E-Commerce project was made in order to learn Microservices. Some of 
 
 ---
 
-## What to Install <a name="#what-to-install"></a>
+### What to Install <a name="#what-to-install"></a>
 
 ---
 
@@ -67,7 +60,7 @@ This basic E-Commerce project was made in order to learn Microservices. Some of 
 
 ---
 
-## Start Project Locally <a name="#start-project"></a>
+### Start Project Locally <a name="#start-project"></a>
 
 ---
 
@@ -79,7 +72,7 @@ This basic E-Commerce project was made in order to learn Microservices. Some of 
 
 ---
 
-## Contributors <a name="#contributors"></a>
+### Contributors <a name="#contributors"></a>
 
 ---
 
