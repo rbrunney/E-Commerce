@@ -180,7 +180,7 @@ This basic E-Commerce project was made in order to learn Microservices. Some of 
 
 ### Github
 
-https://github.com/Dragonliver
+https://github.com/ChrisStanley77
 </u>
 <u>
 
