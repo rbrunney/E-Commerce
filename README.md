@@ -142,9 +142,23 @@ This basic E-Commerce project was made in order to learn Microservices. Some of 
     ```
 6. A good output will look something similar as shown below.
     - Images being built
+
+    ![dockerImages](https://github.com/rbrunney/E-Commerce/blob/main/E-Commerce/DockerComposeOutput1.PNG?raw=true)
+
     - Containers being started
 
-    ![dockerImages](https://github.com/rbrunney/E-Commerce/blob/main/E-Commerce/DockerComposeOutput.PNG?raw=true)
+    ![dockerContainers](https://github.com/rbrunney/E-Commerce/blob/main/E-Commerce/DockerComposeOutput.PNG?raw=true)
+
+7. Once this process has been finished go ahead an go into the following folder path in the project.
+
+    ```
+    ./E-Commerce/E-Commerce/Front-End/Actual-Frontend
+    ```
+
+8. Once in the folder go ahead and double click on the INDEX.HTML to begin messing around with this project.
+
+9. Alternatively you can also open up Postman and begin interacting with the E-Commerce Service to test different end-points
+10. Enjoy :)
 
 
 <br>
@@ -159,3 +173,33 @@ This basic E-Commerce project was made in order to learn Microservices. Some of 
 ---
 
 </div>
+
+## Chris Stanley
+
+<u>
+
+### Github
+
+https://github.com/Dragonliver
+</u>
+<u>
+
+### LinkedIn
+
+https://www.linkedin.com/in/christopher-a-stanley/
+</u>
+
+## Josh Johnson
+
+<u>
+
+### Github
+
+https://github.com/joshuaj25679
+</u>
+<u>
+
+### LinkedIn
+
+https://www.linkedin.com/in/joshua-johnson-4573911b7/
+</u>
