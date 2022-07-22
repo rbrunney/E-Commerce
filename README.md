@@ -14,7 +14,7 @@
 
 <div align="center">
 
-### Table of Contents
+## Table of Contents
 
 </div>
 
@@ -23,10 +23,10 @@
 <br>
 <br>
 
-1. [Description](#description)
-2. [What-To-Install](#what-to-install)
-3. [Start-Project-Locally](#start-project)
-4. [Contributors](#contributors)
+- [Description](#description)
+- [What-To-Install](#what-to-install)
+- [Start-Project](#start-project)
+- [Contributors](#contributors)
 
 <br>
 <br>
@@ -35,7 +35,7 @@
 
 ---
 
-### Description <a name="#description"></a>
+## Description
 ---
 </div>
 <br>
@@ -48,7 +48,7 @@ This basic E-Commerce project was made in order to learn Microservices. Some of 
 
 ---
 
-### What to Install <a name="#what-to-install"></a>
+## What to Install
 
 ---
 
@@ -60,7 +60,7 @@ This basic E-Commerce project was made in order to learn Microservices. Some of 
 
 ---
 
-### Start Project Locally <a name="#start-project"></a>
+## Start Project
 
 ---
 
@@ -72,7 +72,7 @@ This basic E-Commerce project was made in order to learn Microservices. Some of 
 
 ---
 
-### Contributors <a name="#contributors"></a>
+## Contributors
 
 ---
 
